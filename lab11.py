@@ -1,15 +1,13 @@
+# counter
 average_counter = 0
 grade = []
 
-
-
+#inputs
 student_num =int(input("Enter how many students: "))
 
-while student_num == 0 :
-        print("Invalid")
-        student_num = int(input("Enter how many students: "))
+#calculation
 for i in range(student_num):
-    student_grade = float(int(input("Enter Student grade: ")))
+        student_grade = float(int(input(f"Enter Student Grade {student_num}: ")))
     if student_grade < 40 or student_grade > 100:
         print("Error. Invalid Grade")
     break
